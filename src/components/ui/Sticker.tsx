@@ -1,4 +1,4 @@
-/** Butter starburst sticker ("40+ MEMBERS"), rotated −12° with a slow wobble. */
+/** Butter starburst sticker (e.g. "60+ MEMBERS"), rotated −12° with a slow wobble. */
 export default function Sticker({ line1, line2, className = "" }: { line1: string; line2: string; className?: string }) {
   const points = 18;
   const pts = Array.from({ length: points * 2 }, (_, i) => {

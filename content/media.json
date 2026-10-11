@@ -6,26 +6,127 @@
       "subtitle": "Engineering 201 · Pull-up resistor circuit",
       "description": "A 50-second animated walkthrough of how a 10 kΩ pull-up resistor gives an Arduino input a reference voltage: why released reads HIGH, pressed reads LOW, and why a floating pin picks up noise.",
       "chapters": [
-        { "label": "01 / Give the input a reference" },
-        { "label": "02 / Pressing means LOW" },
-        { "label": "03 / Fields are fast. Drift is slow." },
-        { "label": "04 / A floating trace can pick up fields" },
-        { "label": "06 / One button. Two clear states." }
+        {
+          "label": "01 / Give the input a reference"
+        },
+        {
+          "label": "02 / Pressing means LOW"
+        },
+        {
+          "label": "03 / Fields are fast. Drift is slow."
+        },
+        {
+          "label": "04 / A floating trace can pick up fields"
+        },
+        {
+          "label": "06 / One button. Two clear states."
+        }
       ],
       "src": "/video/arduino-button-pullup-720.mp4",
       "poster": "/video/arduino-button-pullup-poster.jpg",
       "durationSeconds": 50,
       "level": "BEGINNER",
-      "tags": ["ARDUINO", "PULL-UP", "DIGITAL INPUT"],
+      "tags": [
+        "ARDUINO",
+        "PULL-UP",
+        "DIGITAL INPUT"
+      ],
       "credit": "Created by Matthew Barker",
       "_note": "TODO(Kaeden): the HU-001C tech doc lists a 'Matthew Smith Baker'. Confirm the correct spelling of the creator's name."
     }
   ],
   "gallery": [
-    { "src": "/photos/soldering-closeup.webp", "alt": "A club member soldering a circuit board held in helping hands on a red Weller mat", "label": "SOLDERING" },
-    { "src": "/photos/inspection-magnifier.webp", "alt": "A member inspects a soldered board under a lighted magnifier while an officer looks on", "label": "INSPECTION" },
-    { "src": "/photos/soldering-station.webp", "alt": "A member working at a fully set-up soldering station with fume extractor", "label": "BUILD NIGHT" },
-    { "src": "/photos/whiteboard-review.webp", "alt": "Two members reviewing a board in front of a whiteboard covered in circuit sketches", "label": "DESIGN REVIEW" },
-    { "src": "/photos/museum-trip-p38.webp", "alt": "Wire Lion members posing in front of a P-38 Lightning aircraft at a World War II museum", "label": "FIELD TRIP", "caption": "Club trip to the World War II museum, in front of a P-38 Lightning.", "_note": "TODO(Kaeden): confirm the museum's full name for the caption." }
+    {
+      "src": "/photos/soldering-closeup.webp",
+      "alt": "A club member soldering a circuit board held in helping hands on a red Weller mat",
+      "label": "SOLDERING"
+    },
+    {
+      "src": "/photos/inspection-magnifier.webp",
+      "alt": "A member inspects a soldered board under a lighted magnifier while an officer looks on",
+      "label": "INSPECTION"
+    },
+    {
+      "src": "/photos/soldering-station.webp",
+      "alt": "A member working at a fully set-up soldering station with fume extractor",
+      "label": "BUILD NIGHT"
+    },
+    {
+      "src": "/photos/whiteboard-review.webp",
+      "alt": "Two members reviewing a board in front of a whiteboard covered in circuit sketches",
+      "label": "DESIGN REVIEW"
+    },
+    {
+      "src": "/photos/museum-trip-p38.webp",
+      "alt": "Wire Lion members posing in front of a P-38 Lightning aircraft at a World War II museum",
+      "label": "FIELD TRIP",
+      "caption": "Club trip to the World War II museum, in front of a P-38 Lightning.",
+      "_note": "TODO(Kaeden): confirm the museum's full name for the caption."
+    },
+    {
+      "src": "/photos/meeting/meeting-2122.webp",
+      "alt": "Group photo of Wire Lion members and guests gathered at the end of a club meeting",
+      "label": "GROUP PHOTO"
+    },
+    {
+      "src": "/photos/meeting/meeting-2123.webp",
+      "alt": "Wire Lion members and guests posing together in a meeting room",
+      "label": "GROUP PHOTO"
+    },
+    {
+      "src": "/photos/meeting/meeting-2124.webp",
+      "alt": "Wide shot of the full group standing together at the back of the meeting room",
+      "label": "GROUP PHOTO"
+    },
+    {
+      "src": "/photos/meeting/meeting-2107.webp",
+      "alt": "Members presenting the traffic light intersection model to an audience",
+      "label": "PROJECT DEMO"
+    },
+    {
+      "src": "/photos/meeting/meeting-2108.webp",
+      "alt": "A member points out details on the traffic light model during a demo",
+      "label": "PROJECT DEMO"
+    },
+    {
+      "src": "/photos/meeting/meeting-2109.webp",
+      "alt": "A presenter gestures toward the room while the traffic light model sits on the table",
+      "label": "PROJECT DEMO"
+    },
+    {
+      "src": "/photos/meeting/meeting-2110.webp",
+      "alt": "Close-up of the four-way traffic light model on a table during the demo",
+      "label": "PROJECT DEMO"
+    },
+    {
+      "src": "/photos/meeting/meeting-2116.webp",
+      "alt": "A member speaks to the group while others listen",
+      "label": "CLUB MEETING"
+    },
+    {
+      "src": "/photos/meeting/meeting-2114.webp",
+      "alt": "Members chatting at a table with a small jack-o'-lantern in front of them",
+      "label": "CLUB MEETING"
+    },
+    {
+      "src": "/photos/meeting/meeting-2115.webp",
+      "alt": "Members and guests seated along a table during a club meeting",
+      "label": "CLUB MEETING"
+    },
+    {
+      "src": "/photos/meeting/meeting-2103.webp",
+      "alt": "Members seated around a long conference table during a club meeting",
+      "label": "CLUB MEETING"
+    },
+    {
+      "src": "/photos/meeting/meeting-2104.webp",
+      "alt": "View down the conference table as members listen during a meeting",
+      "label": "CLUB MEETING"
+    },
+    {
+      "src": "/photos/meeting/meeting-2117.webp",
+      "alt": "Members and guests seated around the meeting room tables",
+      "label": "CLUB MEETING"
+    }
   ]
 }

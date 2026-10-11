@@ -16,7 +16,7 @@ export default function AboutPage() {
     <>
       <div className="wrap py-12 lg:py-16">
         <p className="eyebrow">WHO WE ARE</p>
-        <h1 className="h-giant mt-1">ABOUT THE PRIDE</h1>
+        <h1 className="h-giant mt-1">ABOUT THE CLUB</h1>
 
         <div className="mt-12 grid gap-12 lg:grid-cols-[minmax(0,68ch)_1fr] lg:gap-16">
           <div className="grid max-w-[68ch] gap-6 text-[1.02rem] leading-[1.8] text-muted">
