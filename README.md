@@ -83,7 +83,7 @@ CREAM (default) and BLACK, switched in the header and saved in `localStorage['wl
 ### Other implementation notes
 - **Font:** JetBrains Mono is self-hosted with `next/font/local` (files in `src/assets/fonts`, SIL Open Font License) rather than `next/font/google`, so builds never depend on reaching Google Fonts. The result in the browser is the same.
 - The footer email is assembled in the browser, so it isn't plain text in the HTML.
-- Analytics are **off**. To enable: `npm i @vercel/analytics`, add `<Analytics />` to `src/app/layout.tsx`, and turn on Web Analytics in the Vercel project (ask Kaeden first).
+- **Vercel Web Analytics** is installed (`@vercel/analytics`, `<Analytics />` in `src/app/layout.tsx`). It only collects data on the deployed site once Web Analytics is turned on in the Vercel project (Project → Analytics → Enable). It uses no cookies.
 
 ---
 

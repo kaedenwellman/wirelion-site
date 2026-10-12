@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -82,6 +83,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Footer />
         </div>
         <div className="bezel" aria-hidden="true" />
+        <Analytics />
       </body>
     </html>
   );

@@ -11,6 +11,7 @@
     "outline": "node --no-warnings scripts/build-lion-outline.mts"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "image-size": "^2.0.4",
     "lucide-react": "^1.55.0",
     "motion": "^14.1.0",
