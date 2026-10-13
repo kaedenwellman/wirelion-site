@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { Menu, X } from "lucide-react";
 import Wordmark, { type WordmarkParts } from "./Wordmark";
 import HeaderMark from "./HeaderMark";
@@ -83,7 +84,10 @@ export default function Header({ wordmark }: { wordmark: WordmarkParts }) {
         </div>
       </div>
 
-      {open && (
+      {/* Portaled to <body>: the header's backdrop-filter would otherwise trap
+          this fixed overlay inside the 68px header bar. */}
+      {open &&
+        createPortal(
         <div
           ref={menuRef}
           id="mobile-menu"
@@ -126,8 +130,9 @@ export default function Header({ wordmark }: { wordmark: WordmarkParts }) {
             <span className="eyebrow">THEME</span>
             <ThemeToggle />
           </div>
-        </div>
-      )}
+        </div>,
+          document.body,
+        )}
     </header>
   );
 }
