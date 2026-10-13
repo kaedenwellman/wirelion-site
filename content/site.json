@@ -54,7 +54,7 @@
   },
   "social": {
     "_note": "TODO(Kaeden): fill these in. Any empty value must be hidden in the UI, never shown as a dead link.",
-    "instagram": "",
+    "instagram": "https://www.instagram.com/wire.lion.uccs/",
     "discord": "",
     "linkedin": "",
     "github": "",
