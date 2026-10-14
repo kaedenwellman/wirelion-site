@@ -13,7 +13,13 @@
     { "slug": "lerry-lara", "name": "Lerry Lara", "role": "Secretary", "photo": "" },
     { "slug": "kaeden-wellman", "name": "Kaeden Wellman", "role": "Director of Marketing & Communications", "photo": "" },
     { "slug": "lakshita-kabade", "name": "Lakshita Kabade", "role": "Director of Social Media & Engagement", "photo": "" },
-    { "slug": "william-mcginley", "name": "William McGinley", "role": "Club Officer", "photo": "/team/william-mcginley.webp" },
+    { "slug": "william-mcginley", "name": "William McGinley", "role": "Club Officer", "photo": "/team/william-mcginley.webp",
+      "linkedin": "https://www.linkedin.com/in/william-mcginley-2a5b5021a",
+      "bio": [
+        "Billy is a senior Electrical Engineering student at UCCS with a passion for understanding how things work and turning ideas into real, working projects. His interests range from power systems to electronics, with a particular appreciation for hands-on projects that involve designing, building, testing, and troubleshooting from the ground up.",
+        "As an officer of the Wire Lion Engineering Club, Billy enjoys working alongside other students, sharing knowledge, and taking on projects that challenge the team to learn new skills. For him, engineering is about curiosity, creativity, collaboration, and, most importantly, having fun while building something cool."
+      ]
+    },
     { "slug": "jake-marlett", "name": "Jake Marlett", "role": "Club Officer", "photo": "" },
     { "slug": "ben-foronda", "name": "Ben Foronda", "role": "Club Officer", "photo": "" }
   ],
