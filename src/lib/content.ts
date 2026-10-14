@@ -102,6 +102,9 @@ const PersonSchema = z.object({
   role: nonEmpty,
   badge: z.string().optional(),
   photo: z.string().default(""),
+  /** Optional bio, one string per paragraph. Shown in a "Read bio" panel. */
+  bio: z.array(nonEmpty).default([]),
+  linkedin: z.url().optional(),
 });
 const TeamSchema = z.object({ officers: z.array(PersonSchema), advisors: z.array(PersonSchema) });
 

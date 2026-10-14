@@ -1,7 +1,14 @@
 {
-  "_note": "Photos: put square images in /public/team/<slug>.webp and set `photo`. Empty photo = render a letter avatar. Lerry Lara is listed twice on Mountain Lion Connect (Secretary + Club Officer); show once, as Secretary.",
+  "_note": "Photos: put square images in /public/team/<slug>.webp and set `photo`. Empty photo = render a letter avatar. Optional: \"bio\" (array of paragraphs) adds a READ BIO panel; \"linkedin\" (full URL) adds a LinkedIn link. Lerry Lara is listed twice on Mountain Lion Connect (Secretary + Club Officer); show once, as Secretary.",
   "officers": [
-    { "slug": "daniel-bustos", "name": "Daniel Bustos", "role": "President", "badge": "PRIMARY CONTACT", "photo": "/team/daniel-bustos.webp" },
+    { "slug": "daniel-bustos", "name": "Daniel Bustos", "role": "President", "badge": "PRIMARY CONTACT", "photo": "/team/daniel-bustos.webp",
+      "linkedin": "https://www.linkedin.com/in/danielbustos1030",
+      "bio": [
+        "Daniel is a third-year Electrical Engineering student at UCCS, U.S. Army veteran, and President of the Wire Lion Engineering Club. His interests include power systems, electronics, embedded systems, and hands-on engineering projects that turn concepts learned in the classroom into practical experience.",
+        "As president, Daniel is passionate about creating opportunities for students to build projects, develop technical skills, network with professional engineers, and gain experience outside of the classroom. His goal with Wire Lion is to create an environment where students at any experience level can get involved, learn from one another, make mistakes, and develop the confidence to tackle increasingly challenging projects.",
+        "For Daniel, engineering is not just about earning a degree; it's about building something, figuring out why it did not work the first time, and working together until it does."
+      ]
+    },
     { "slug": "michael-smith", "name": "Michael Smith", "role": "Vice President", "photo": "" },
     { "slug": "lerry-lara", "name": "Lerry Lara", "role": "Secretary", "photo": "" },
     { "slug": "kaeden-wellman", "name": "Kaeden Wellman", "role": "Director of Marketing & Communications", "photo": "" },

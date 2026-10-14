@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import LetterAvatar from "@/components/ui/LetterAvatar";
+import BioDialog from "@/components/ui/BioDialog";
 import { team, type Person } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -22,9 +23,14 @@ function PersonCard({ person, index }: { person: Person; index: number }) {
           <span className="tag absolute left-3 top-3 bg-elevated !text-[0.65rem]">{person.badge}</span>
         )}
       </div>
-      <div className="p-4 sm:p-5">
+      <div className="flex flex-1 flex-col p-4 sm:p-5">
         <p className="eyebrow">{person.role}</p>
         <h3 className="mt-1 text-lg font-extrabold uppercase leading-tight">{person.name}</h3>
+        {person.bio.length > 0 && (
+          <div className="mt-auto pt-4">
+            <BioDialog name={person.name} role={person.role} photo={person.photo || undefined} bio={person.bio} linkedin={person.linkedin} />
+          </div>
+        )}
       </div>
     </li>
   );
