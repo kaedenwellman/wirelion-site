@@ -9,7 +9,7 @@
         "For Daniel, engineering is not just about earning a degree; it's about building something, figuring out why it did not work the first time, and working together until it does."
       ]
     },
-    { "slug": "michael-smith", "name": "Michael Smith", "role": "Vice President", "photo": "" },
+    { "slug": "michael-smith", "name": "Michael Smith", "role": "Vice President", "photo": "/team/michael-smith.webp" },
     { "slug": "lerry-lara", "name": "Lerry Lara", "role": "Secretary", "photo": "" },
     { "slug": "kaeden-wellman", "name": "Kaeden Wellman", "role": "Director of Marketing & Communications", "photo": "" },
     { "slug": "william-mcginley", "name": "William McGinley", "role": "Club Officer", "photo": "/team/william-mcginley.webp" },
