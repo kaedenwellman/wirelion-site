@@ -12,10 +12,11 @@ type Props = {
   photo?: string;
   bio: string[];
   linkedin?: string;
+  profileUrl?: string;
 };
 
 /** "READ BIO" button on an officer card, opening a full bio panel. */
-export default function BioDialog({ name, role, photo, bio, linkedin }: Props) {
+export default function BioDialog({ name, role, photo, bio, linkedin, profileUrl }: Props) {
   const [open, setOpen] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -82,11 +83,20 @@ export default function BioDialog({ name, role, photo, bio, linkedin }: Props) {
                     {para}
                   </p>
                 ))}
-                {linkedin && (
-                  <a href={linkedin} target="_blank" rel="noopener noreferrer" className="btn btn-primary press mt-2 justify-self-start">
-                    LINKEDIN <ArrowUpRight aria-hidden="true" size={18} />
-                    <span className="sr-only">(opens in a new tab)</span>
-                  </a>
+                {(linkedin || profileUrl) && (
+                  <div className="mt-2 flex flex-wrap gap-3">
+                    {[
+                      { href: linkedin, label: "LINKEDIN" },
+                      { href: profileUrl, label: "UCCS PROFILE" },
+                    ]
+                      .filter((l): l is { href: string; label: string } => Boolean(l.href))
+                      .map((l) => (
+                        <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer" className="btn btn-primary press">
+                          {l.label} <ArrowUpRight aria-hidden="true" size={18} />
+                          <span className="sr-only">(opens in a new tab)</span>
+                        </a>
+                      ))}
+                  </div>
                 )}
               </div>
             </div>

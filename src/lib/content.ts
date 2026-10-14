@@ -105,6 +105,8 @@ const PersonSchema = z.object({
   /** Optional bio, one string per paragraph. Shown in a "Read bio" panel. */
   bio: z.array(nonEmpty).default([]),
   linkedin: z.url().optional(),
+  /** Official profile page (e.g. a UCCS faculty page). */
+  profileUrl: z.url().optional(),
 });
 const TeamSchema = z.object({ officers: z.array(PersonSchema), advisors: z.array(PersonSchema) });
 

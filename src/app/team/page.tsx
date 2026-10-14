@@ -28,7 +28,7 @@ function PersonCard({ person, index }: { person: Person; index: number }) {
         <h3 className="mt-1 text-lg font-extrabold uppercase leading-tight">{person.name}</h3>
         {person.bio.length > 0 && (
           <div className="mt-auto pt-4">
-            <BioDialog name={person.name} role={person.role} photo={person.photo || undefined} bio={person.bio} linkedin={person.linkedin} />
+            <BioDialog name={person.name} role={person.role} photo={person.photo || undefined} bio={person.bio} linkedin={person.linkedin} profileUrl={person.profileUrl} />
           </div>
         )}
       </div>
