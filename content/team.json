@@ -24,7 +24,7 @@
     { "slug": "ben-foronda", "name": "Ben Foronda", "role": "Club Officer", "photo": "" }
   ],
   "advisors": [
-    { "slug": "leslie-tekamp", "name": "Leslie Tekamp", "role": "Faculty Advisor", "photo": "",
+    { "slug": "leslie-tekamp", "name": "Leslie Tekamp", "role": "Faculty Advisor", "photo": "/team/leslie-tekamp.webp",
       "profileUrl": "https://eas.uccs.edu/departments/electrical-and-computer-engineering/directory/faculty/leslie-tekamp",
       "bio": [
         "Leslie (Les) Tekamp is a Teaching Professor in the UCCS Department of Electrical and Computer Engineering and serves as the faculty advisor for the Wire Lion Engineering Club.",
