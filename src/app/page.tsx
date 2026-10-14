@@ -17,6 +17,11 @@ const PHOTO_LAYOUT = [
   "col-span-1 row-span-1",
   "col-span-2 row-span-1 sm:col-span-2",
 ];
+// Home page hero backdrop. Swap the file in /public/photos/hero/ to change it.
+const HERO_PHOTO = {
+  src: "/photos/hero/group-photo.webp",
+  alt: "Wire Lion members, officers and guests gathered for a group photo at a club meeting",
+};
 const CORNER = ["left-3 top-3", "right-3 top-3", "left-3 bottom-3", "right-3 bottom-3"];
 
 export default function HomePage() {
@@ -48,13 +53,23 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* 1. Hero */}
-      <section className="relative overflow-hidden">
+      <section className="relative isolate overflow-hidden border-b-2 border-ink bg-[#07090d]">
+        {/* Backdrop photo, darkened so the hero text stays readable. */}
+        <Image
+          src={HERO_PHOTO.src}
+          alt={HERO_PHOTO.alt}
+          fill
+          priority
+          sizes="100vw"
+          className="-z-10 object-cover object-[50%_70%]"
+        />
+        <div aria-hidden="true" className="hero-scrim absolute inset-0 -z-10" />
         <Sticker
           line1={site.memberCountLabel}
           line2="MEMBERS"
           className="absolute -right-8 top-4 z-10 h-[124px] w-[124px] sm:-right-6 sm:top-6 sm:h-[160px] sm:w-[160px] lg:-right-10 lg:h-[190px] lg:w-[190px]"
         />
-        <div className="wrap grid gap-10 pb-14 pt-10 sm:pt-14 lg:grid-cols-[1fr_360px] lg:items-end lg:gap-14 lg:pb-20 lg:pt-20">
+        <div className="on-photo wrap grid gap-10 pb-14 pt-10 sm:pt-14 lg:grid-cols-[1fr_360px] lg:items-end lg:gap-14 lg:pb-24 lg:pt-24">
           <div data-stagger="">
             <p className="eyebrow pr-24 [--i:0] sm:pr-0">UCCS // ELECTRICAL &amp; COMPUTER ENGINEERING</p>
             <h1 className="h-giant mt-4 max-w-[13ch] [--i:1]">{site.heroHeadline}</h1>
