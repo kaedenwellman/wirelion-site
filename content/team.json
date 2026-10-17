@@ -15,7 +15,13 @@
         "Lerry is an aerospace engineering student at the University of Colorado Colorado Springs with a strong interest in electronics, technology, and hands-on projects. Through the Wire Lion Engineering Club, Lerry enjoys developing practical skills, collaborating with others, and building projects that prepare students for future internships and careers. The goal is to keep expanding technical knowledge and gain experience in aerospace and engineering-related fields."
       ]
     },
-    { "slug": "kaeden-wellman", "name": "Kaeden Wellman", "role": "Director of Marketing & Communications", "photo": "" },
+    { "slug": "kaeden-wellman", "name": "Kaeden Wellman", "role": "Director of Marketing & Communications", "photo": "/team/kaeden-wellman.webp",
+      "bio": [
+        "Kaeden is a first-year Electrical Engineering student at UCCS, a Division II hurdler on the track and field team, and an officer of the Wire Lion Engineering Club. His interests include embedded systems, electronics, and web development, especially projects where hardware and software have to work together. He has kept a notebook of invention ideas since he was a kid and taught himself web development, app development, and 3D rendering to start building them, including a motion-controlled lightsaber game that streams sensor data from a CircuitPython board into a browser.",
+        "At Wire Lion, Kaeden served as project lead on a four-way traffic light intersection, wired and coded on an Arduino to run a full red, yellow, and green cycle. He is also the designer and developer behind this website, wire animation included. He wants Wire Lion to be a place where students show up with an idea, find people to build it with, and walk away having made something real.",
+        "For Kaeden, the best part of engineering is watching an idea leave the page. Plenty of the sketches in his invention notebook started as a few lines and a question mark, and engineering is what turns them into a circuit you can wire, code you can run, and a device you can pick up and hand to someone else. He is happiest at the moment a project stops being something he can only describe and becomes something people can actually see, touch, and use."
+      ]
+    },
     { "slug": "lakshita-kabade", "name": "Lakshita Kabade", "role": "Director of Social Media & Engagement", "photo": "/team/lakshita-kabade.webp",
       "bio": [
         "Lakshita is a freshman at UCCS majoring in Electrical Engineering with a minor in Computer Science, with interests in chip design, embedded systems, hardware security, and SoC design.",
