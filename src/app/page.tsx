@@ -19,7 +19,7 @@ const PHOTO_LAYOUT = [
 ];
 // Home page hero backdrop. Swap the file in /public/photos/hero/ to change it.
 const HERO_PHOTO = {
-  src: "/photos/hero/group-photo.webp",
+  src: "/photos/hero/group-photo-cropped.webp",
   alt: "Wire Lion members, officers and guests gathered for a group photo at a club meeting",
 };
 const CORNER = ["left-3 top-3", "right-3 top-3", "left-3 bottom-3", "right-3 bottom-3"];
@@ -61,7 +61,7 @@ export default function HomePage() {
           fill
           priority
           sizes="100vw"
-          className="-z-10 object-cover object-[50%_70%]"
+          className="-z-10 object-cover object-[50%_85%]"
         />
         <div aria-hidden="true" className="hero-scrim absolute inset-0 -z-10" />
         <Sticker
