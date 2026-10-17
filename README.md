@@ -37,6 +37,9 @@ Edit `/content/team.json`. To add a photo, save a square image as `/public/team/
 ### Add social links
 Fill in `/content/site.json → social` (full URLs). Empty values are hidden, never shown as dead links.
 
+### Add a news post
+Add an entry at the top of `/content/news.json → posts` (copy the existing one): `slug`, `title`, `date` (`YYYY-MM-DD`), `summary`, and `body`. In `body`, each plain string is a paragraph and `{ "quote": "...", "cite": "..." }` is a pull quote. `source` is optional; give it an `href` to make it a link. Posts show on `/news`, get their own page, and the newest three appear under "In the news" on the home page.
+
 ### Add a video
 Add an entry to `/content/media.json → videos` (mp4 in `/public/video/`, plus a poster `.jpg`). Optional `captions`: a `.vtt` file path, rendered as a `<track>`.
 

@@ -6,7 +6,8 @@ import Marquee from "@/components/ui/Marquee";
 import ProjectBrowser from "@/components/ui/ProjectBrowser";
 import FeaturedVideo from "@/components/sections/FeaturedVideo";
 import JoinButton from "@/components/sections/JoinButton";
-import { buildsShipped, media, projects, site, socialLinks, upcomingProjects } from "@/lib/content";
+import NewsCard from "@/components/ui/NewsCard";
+import { buildsShipped, media, news, projects, site, socialLinks, upcomingProjects } from "@/lib/content";
 import { SITE_URL } from "@/lib/url";
 
 const LABEL_BG = ["bg-mint", "bg-peach", "bg-lav", "bg-butter"];
@@ -179,6 +180,28 @@ export default function HomePage() {
               </div>
             </div>
           ))}
+        </section>
+      )}
+
+      {/* In the news */}
+      {news.length > 0 && (
+        <section className="border-t-2 border-ink py-16 lg:py-24">
+          <div className="wrap">
+            <p className="eyebrow">UPDATES</p>
+            <h2 className="h-section mt-1">IN THE NEWS</h2>
+            <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+              {news.slice(0, 3).map((p) => (
+                <li key={p.slug}>
+                  <NewsCard post={p} />
+                </li>
+              ))}
+            </ul>
+            <div className="mt-10">
+              <Link href="/news" className="link-arrow">
+                ALL NEWS →
+              </Link>
+            </div>
+          </div>
         </section>
       )}
 

@@ -1,0 +1,24 @@
+{
+  "_note": "News posts, newest first. Each body item is either a paragraph (a plain string) or a quote ({ \"quote\": \"...\", \"cite\": \"...\" }). source is optional: { \"label\": \"...\", \"href\": \"https://...\" }. Fields starting with _ are notes for humans; never render them.",
+  "posts": [
+    {
+      "slug": "ieee-region-5-directors-visit",
+      "title": "IEEE Region 5 Directors Spotlight Wire Lion",
+      "date": "2026-10-15",
+      "tag": "IN THE NEWS",
+      "summary": "IEEE Region 5 Director Christopher Sanderson wrote about the directors' visit to UCCS, where Wire Lion members showcased hands-on electronics projects.",
+      "body": [
+        "On October 9, 2026, the IEEE Pikes Peak Section welcomed IEEE Region 5 Director Christopher Sanderson, Director-Elect Ian MacMillan, and West Area Coordinator Faye Kann for a day of \"Meet the Directors\" sessions with Section leadership, industry professionals, students, and IEEE members.",
+        "At UCCS, the directors met with 28 students, faculty advisors, and Section members, including members of the Wire Lion Engineering Club. In a write-up of the visit, Sanderson highlighted what our members brought to the table:",
+        { "quote": "Students showcased hands-on electronics projects and demonstrated the creativity, technical skills, and innovation that will shape tomorrow's engineering workforce.", "cite": "Christopher Sanderson, IEEE Region 5 Director" },
+        "The post also called on IEEE to connect student members with professional mentors, technical resources, leadership opportunities, and pathways to continued involvement:",
+        { "quote": "We must help students see IEEE not simply as a student organization, but as a lifelong professional community.", "cite": "Christopher Sanderson, IEEE Region 5 Director" },
+        "Thank you to IEEE Region 5 and the IEEE Pikes Peak Section for visiting UCCS and for the kind words about our members."
+      ],
+      "source": {
+        "label": "\"IEEE Region 5: Membership Engagement, Scholarships, and Investing in the Next Generation! with IEEE Pikes Peak Section\" by Christopher Sanderson, published October 15, 2026 on LinkedIn"
+      },
+      "_sourceNote": "TODO(Kaeden): paste the LinkedIn article URL into source.href so the source line becomes a link."
+    }
+  ]
+}

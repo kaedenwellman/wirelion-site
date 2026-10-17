@@ -23,7 +23,7 @@ export default function AboutPage() {
             <p className="text-[1.12rem] text-ink">{about.intro}</p>
             <p>{about.mission}</p>
             <blockquote className="brutal my-2 bg-mint p-6 text-[clamp(1.2rem,2.6vw,1.6rem)] font-extrabold leading-snug tracking-tight text-ink">
-              <p>“From logic circuits and Arduino to digital systems and Verilog.”</p>
+              <p>“From logic circuits and Arduino to digital systems and FPGAs.”</p>
             </blockquote>
             <p>{about.beyond}</p>
             <p>{about.closing}</p>

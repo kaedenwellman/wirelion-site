@@ -11,6 +11,7 @@ import siteJson from "../../content/site.json";
 import projectsJson from "../../content/projects.json";
 import teamJson from "../../content/team.json";
 import mediaJson from "../../content/media.json";
+import newsJson from "../../content/news.json";
 
 const nonEmpty = z.string().trim().min(1);
 const localPath = z.string().startsWith("/", "paths must start with / (relative to /public)");
@@ -133,6 +134,19 @@ const GallerySchema = z.object({
 });
 const MediaSchema = z.object({ videos: z.array(VideoSchema), gallery: z.array(GallerySchema) });
 
+/* ---------------------------------------------------------------- news.json */
+const NewsBlockSchema = z.union([nonEmpty, z.object({ quote: nonEmpty, cite: z.string().optional() })]);
+const NewsPostSchema = z.object({
+  slug: z.string().regex(/^[a-z0-9-]+$/, "slug must be lowercase letters, numbers and dashes"),
+  title: nonEmpty,
+  date: z.iso.date(),
+  tag: z.string().optional(),
+  summary: nonEmpty,
+  body: z.array(NewsBlockSchema).min(1),
+  source: z.object({ label: nonEmpty, href: z.url().optional() }).optional(),
+});
+const NewsSchema = z.object({ posts: z.array(NewsPostSchema) });
+
 /* ----------------------------------------------------------------- loaders */
 function parse<T extends z.ZodType>(schema: T, data: unknown, file: string): z.infer<T> {
   const result = schema.safeParse(data);
@@ -148,11 +162,25 @@ export type ProjectStatus = Project["status"];
 export type Person = z.infer<typeof PersonSchema>;
 export type Video = z.infer<typeof VideoSchema>;
 export type GalleryItem = z.infer<typeof GallerySchema>;
+export type NewsPost = z.infer<typeof NewsPostSchema>;
 
 export const site: Site = parse(SiteSchema, siteJson, "site.json");
 export const projects: Project[] = parse(ProjectsSchema, projectsJson, "projects.json").projects;
 export const team = parse(TeamSchema, teamJson, "team.json");
 export const media = parse(MediaSchema, mediaJson, "media.json");
+/** Newest first, whatever order the JSON is in. */
+export const news: NewsPost[] = parse(NewsSchema, newsJson, "news.json").posts.sort((a, b) => b.date.localeCompare(a.date));
+
+export function getPost(slug: string) {
+  return news.find((p) => p.slug === slug);
+}
+
+/** "2026-10-15" → "OCT 15, 2026" (UTC, so build and browser always agree). */
+export function formatDate(iso: string) {
+  return new Date(`${iso}T00:00:00Z`)
+    .toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" })
+    .toUpperCase();
+}
 
 /* ----------------------------------------------------------------- helpers */
 export function getProject(slug: string) {

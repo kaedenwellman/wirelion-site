@@ -23,7 +23,7 @@ const mono = localFont({
 });
 
 const description =
-  "Wire Lion is a student-led electrical & computer engineering club at UCCS. Hands-on circuits, Arduino, soldering, digital systems and Verilog, for every skill level.";
+  "Wire Lion is a student-led electrical & computer engineering club at UCCS. Hands-on circuits, Arduino, soldering, digital systems and FPGAs, for every skill level.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
