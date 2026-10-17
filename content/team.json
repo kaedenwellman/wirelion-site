@@ -16,7 +16,12 @@
       ]
     },
     { "slug": "kaeden-wellman", "name": "Kaeden Wellman", "role": "Director of Marketing & Communications", "photo": "" },
-    { "slug": "lakshita-kabade", "name": "Lakshita Kabade", "role": "Director of Social Media & Engagement", "photo": "" },
+    { "slug": "lakshita-kabade", "name": "Lakshita Kabade", "role": "Director of Social Media & Engagement", "photo": "/team/lakshita-kabade.webp",
+      "bio": [
+        "Lakshita is a freshman at UCCS majoring in Electrical Engineering with a minor in Computer Science, with interests in chip design, embedded systems, hardware security, and SoC design.",
+        "Outside of engineering, Lakshita loves dancing, weightlifting, and making content, and is excited to showcase what the club is up to and bring the Wire Lion engineering community to life on social media."
+      ]
+    },
     { "slug": "william-mcginley", "name": "William McGinley", "role": "Club Officer", "photo": "/team/william-mcginley.webp",
       "linkedin": "https://www.linkedin.com/in/william-mcginley-2a5b5021a",
       "bio": [
