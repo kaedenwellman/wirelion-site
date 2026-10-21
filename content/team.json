@@ -36,7 +36,12 @@
       ]
     },
     { "slug": "jake-marlett", "name": "Jake Marlett", "role": "Club Officer", "photo": "" },
-    { "slug": "ben-foronda", "name": "Ben Foronda", "role": "Club Officer", "photo": "" }
+    { "slug": "ben-foronda", "name": "Ben Foronda", "role": "Club Officer", "photo": "/team/ben-foronda.webp",
+      "bio": [
+        "Ben “Josh” is a current second year Electrical Engineering student at UCCS. His previous history includes a prior B.S. Chemistry from UCCS with work in the medical field as an EMT. His interests lie in embedded systems, semiconductors, and integrated circuits with projects lying currently with microcontrollers. His current situation at the university includes helping students as both a Club Officer and a TA within the college of Electrical and Computer Engineering.",
+        "For Josh, engineering is a new pathway for his career with exciting possibilities. Due to his previous experience he hopes to build a solid foundation and find a career path that will stretch his capabilities to their limits and find a challenge that will keep him engaged."
+      ]
+    }
   ],
   "advisors": [
     { "slug": "leslie-tekamp", "name": "Leslie Tekamp", "role": "Faculty Advisor", "photo": "/team/leslie-tekamp.webp",
