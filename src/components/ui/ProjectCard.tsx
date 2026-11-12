@@ -32,6 +32,9 @@ export default function ProjectCard({
         ) : (
           <ComingSoonArt category={project.category} pumpkin={isPumpkin(project)} />
         )}
+        {project.award && (
+          <span className="tag absolute left-3 top-3 z-[1] bg-butter !text-[#141414]">★ {project.award}</span>
+        )}
       </div>
       <div className="flex flex-1 flex-col gap-2 p-4 sm:p-5">
         <span className="eyebrow">{project.category}</span>

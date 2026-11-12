@@ -6,6 +6,7 @@ import Carousel from "@/components/ui/Carousel";
 import DetailsTabs, { type Tab } from "@/components/ui/DetailsTabs";
 import TechBadges from "@/components/ui/TechBadges";
 import ProjectCard, { isPumpkin } from "@/components/ui/ProjectCard";
+import YouTubeEmbed from "@/components/ui/YouTubeEmbed";
 import { getProject, projects, type Project } from "@/lib/content";
 
 export const dynamicParams = false;
@@ -167,7 +168,14 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
           </div>
 
           <div>
-            <p className="brutal inline-block bg-lav px-4 py-2 text-2xl font-extrabold tracking-[0.02em] sm:text-3xl">{p.status}</p>
+            <div className="flex flex-wrap items-center gap-3">
+              <p className="brutal inline-block bg-lav px-4 py-2 text-2xl font-extrabold tracking-[0.02em] sm:text-3xl">{p.status}</p>
+              {p.award && (
+                <p className="brutal inline-block bg-butter px-4 py-2 text-2xl font-extrabold tracking-[0.02em] text-[#141414] sm:text-3xl">
+                  ★ {p.award}
+                </p>
+              )}
+            </div>
             <h1 className="mt-6 text-[clamp(2.2rem,6vw,4.25rem)] font-extrabold uppercase leading-[0.95] tracking-[-0.02em]">{p.title}</h1>
             <p className="body-copy mt-5 max-w-[62ch]">{p.summary}</p>
 
@@ -212,6 +220,20 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
           </div>
         </div>
       </div>
+
+      {p.video && (
+        <section className="border-t-2 border-ink py-14 lg:py-20" aria-labelledby="demo-video">
+          <div className="wrap">
+            <p className="eyebrow">WATCH IT RUN</p>
+            <h2 id="demo-video" className="h-section mt-1">
+              DEMO VIDEO
+            </h2>
+            <div className="mt-8 max-w-[960px]">
+              <YouTubeEmbed id={p.video.youtubeId} start={p.video.start} title={p.video.title} />
+            </div>
+          </div>
+        </section>
+      )}
 
       {others.length > 0 && (
         <section className="border-t-2 border-ink py-14 lg:py-20">

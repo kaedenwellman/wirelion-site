@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  // The Halloween competition page became the winning project's page.
+  async redirects() {
+    return [{ source: "/projects/reactive-jack-o-lantern", destination: "/projects/hollow-hive", permanent: true }];
+  },
   images: {
     formats: ["image/avif", "image/webp"],
   },

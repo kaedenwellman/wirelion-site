@@ -34,10 +34,11 @@ export default function ProjectBrowser({
   const [filter, setFilter] = useState<Filter>("ALL");
   const [query, setQuery] = useState("");
 
+  // ALL and COMPLETE always show; IN PROGRESS and UPCOMING only when a project has that status.
   const filters = useMemo<Filter[]>(() => {
     const list: Filter[] = ["ALL", "COMPLETE"];
     if (projects.some((p) => p.status === "IN PROGRESS")) list.push("IN PROGRESS");
-    list.push("UPCOMING");
+    if (projects.some((p) => p.status === "UPCOMING")) list.push("UPCOMING");
     return list;
   }, [projects]);
 

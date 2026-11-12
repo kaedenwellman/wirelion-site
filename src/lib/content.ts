@@ -69,6 +69,15 @@ const ProjectSchema = z.object({
   status: z.enum(STATUSES),
   level: nonEmpty,
   teaser: z.string().optional(),
+  /** Badge text such as "1ST PLACE". */
+  award: z.string().optional(),
+  video: z
+    .object({
+      youtubeId: z.string().regex(/^[A-Za-z0-9_-]{11}$/, "youtubeId is the 11-character id from the YouTube URL"),
+      start: z.number().int().nonnegative().optional(),
+      title: nonEmpty,
+    })
+    .optional(),
   summary: nonEmpty,
   description: nonEmpty,
   tech: z.array(nonEmpty).default([]),
